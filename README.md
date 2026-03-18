@@ -20,9 +20,6 @@
 ---
 
 ## 📸 Preview
-
-> *(Add screenshots here — see [Contributing Screenshots](#-screenshots) section below)*
-
 | Home | Products | Cart | Checkout |
 |------|----------|------|----------|
 | ![Home](.github/screenshots/home.png) | ![Products](.github/screenshots/products.png) | ![Cart](.github/screenshots/cart.png) | ![Checkout](.github/screenshots/checkout.png) |
