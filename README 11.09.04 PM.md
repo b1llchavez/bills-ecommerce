@@ -6,7 +6,7 @@
 
 ### *"Bill got it all for you."*
 
-[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-bills--ecommerce.vercel.app-800020?style=for-the-badge)](https://bills-ecommerce.vercel.app)
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Site-800020?style=for-the-badge)](https://billmamorno.github.io/bills-ecommerce)
 [![React](https://img.shields.io/badge/React%2018-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap%205-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
@@ -25,14 +25,6 @@ A full-featured, mobile-first React e-commerce web application — built as the 
 | ![Home](.github/screenshots/home.png) | ![Products](.github/screenshots/products.png) |
 | **🛒 Cart** | **💳 Checkout** |
 | ![Cart](.github/screenshots/cart.png) | ![Checkout](.github/screenshots/checkout.png) |
-
----
-
-## 🌐 Live Demo
-
-> **Try it out here → [https://bills-ecommerce.vercel.app](https://bills-ecommerce.vercel.app)**
-
-Deployed on **Vercel** and fully functional — browse products, add to cart, apply promo codes, and go through the entire checkout flow live.
 
 ---
 
