@@ -22,7 +22,9 @@ A full-featured, mobile-first React e-commerce web application — built as the 
 
 | 🏠 Home | 🛍️ Products |
 |:---:|:---:|
-| ![Home](public/screenshot-desktop.png) | ![Mobile](public/screenshot-mobile.png) |
+| ![Home](.github/screenshots/home.png) | ![Products](.github/screenshots/products.png) |
+| **🛒 Cart** | **💳 Checkout** |
+| ![Cart](.github/screenshots/cart.png) | ![Checkout](.github/screenshots/checkout.png) |
 
 ---
 
