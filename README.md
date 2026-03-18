@@ -1,113 +1,134 @@
 <div align="center">
 
-<img src="public/icon-512x512.png" alt="Bill's Logo" width="100" style="border-radius: 16px;" />
+<img src="public/icon-512x512.png" alt="Bill's Logo" width="90" />
 
-# 🛍️ Bill's — Your Everything Store
+# Bill's E-Commerce
 
-**A full-featured React e-commerce web app built as a Final Project for Advanced Web Design**
-*FEU Institute of Technology · A.Y. 2025–2026, 2nd Term*
+### *"Bill got it all for you."*
 
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_Site-800020?style=for-the-badge)](https://your-deploy-url.vercel.app)
-[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)](https://react.dev)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?style=for-the-badge&logo=bootstrap)](https://getbootstrap.com)
-[![Vite](https://img.shields.io/badge/Vite-Build_Tool-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev)
-[![License](https://img.shields.io/badge/License-MIT-c9a84c?style=for-the-badge)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Site-800020?style=for-the-badge)](https://billmamorno.github.io/bills-ecommerce)
+[![React](https://img.shields.io/badge/React%2018-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap%205-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-c9a84c?style=for-the-badge)](LICENSE)
 
-> *"Bill got it all for you."*
+A full-featured, mobile-first React e-commerce web application — built as the **Final Project** for *Advanced Web Design* at **FEU Institute of Technology**, A.Y. 2025–2026, 2nd Term.
 
 </div>
 
 ---
 
 ## 📸 Preview
-| Home | Products | Cart | Checkout |
-|------|----------|------|----------|
-| ![Home](.github/screenshots/home.png) | ![Products](.github/screenshots/products.png) | ![Cart](.github/screenshots/cart.png) | ![Checkout](.github/screenshots/checkout.png) |
+
+| 🏠 Home | 🛍️ Products |
+|:---:|:---:|
+| ![Home](public/screenshot-desktop.png) | ![Mobile](public/screenshot-mobile.png) |
 
 ---
 
-## ✨ Features
+## ✨ What's Inside
 
-### 🏪 Core Shopping Experience
-- **Product Listing** — Browse products fetched live from [FakeStore API](https://fakestoreapi.com), displayed in a responsive grid
-- **Category Filtering** — Filter by Electronics, Men's/Women's Clothing, and Jewelry from a sidebar
-- **Smart Search** — Full-text product search with URL query params (`/products?q=...`)
-- **Sort & Price Range** — Sort by price, name, or rating; filter by a PHP price range slider
-- **Product Modal** — Tap any card for a full-detail modal with features, description, rating, and quick actions
+### 🛒 Shopping Experience
+- **Live Product Catalogue** — fetched in real-time from [FakeStore API](https://fakestoreapi.com), displayed in a clean responsive grid
+- **Category Filtering** — Electronics, Men's & Women's Clothing, Jewelry
+- **Smart Search** — full-text search with URL query params (`/products?q=...`)
+- **Sort & Price Range Slider** — sort by price, name, or rating; filter by PHP price range
+- **Product Quick-View Modal** — tap any card for a full detail view with features, ratings, and quick actions
 
-### 🛒 Cart & Wishlist
-- **Persistent Cart** — Add, remove, and adjust quantities with a live total
-- **Wishlist** — Save products for later; wishlist state persists via `localStorage`
-- **Order Summary** — Subtotal, free delivery badge, and a sticky checkout panel
+### 🧺 Cart & Wishlist
+- **Persistent Cart** — add, remove, and adjust quantities; live running total
+- **Wishlist** — save items for later, persists via `localStorage`
+- **Order Summary Panel** — subtotal, free delivery badge, sticky checkout button
 
-### 💳 Checkout
-- **Multi-step Form** — Collects delivery info, validates all fields, and supports 4 payment methods:
-  - Cash on Delivery (COD)
-  - GCash
-  - Maya
-  - Credit/Debit Card (with live card number formatting)
-- **Promo Codes** — Apply discount codes: `BILLS10`, `BILLS50`, `FEUTECH`, `FREESHIP`
-- **12% VAT** — Automatically calculated and shown in order summary
-- **Order Success Screen** — Clears cart and shows a confirmation with order details
+### 💳 Checkout Flow
+- **Delivery Form** with full field validation
+- **4 Payment Methods** — Cash on Delivery, GCash, Maya, Credit/Debit Card
+  - Live card number auto-formatting (groups of 4)
+  - Expiry date auto-formatting (`MM/YY`)
+- **Promo Code System** — apply discount codes at checkout
+- **12% VAT** — automatically calculated
+- **Order Confirmation Screen** — clears cart and displays a receipt
 
-### 🎨 UI & UX Polish
-- **Dark Mode** — Toggle with a smooth animated transition (moon 🌙 / sun ☀️ overlay with orbiting particles)
-- **PWA-Ready** — Service worker registered for offline/installable support
-- **Scroll Reveal Animations** — Cards and sections animate in on scroll using IntersectionObserver
-- **Skeleton Loaders** — Shown while product data is loading
-- **Animated Stats Counter** — Homepage stats count up on load
-- **Responsive Design** — Mobile-first layout with a dedicated bottom navigation bar on small screens
-- **Trust Badges** — Scrollable trust row with bidirectional hints on mobile
+### 🎨 UI & Experience Details
+- 🌙 **Animated Dark Mode** — moon/sun toggle with a glowing particle overlay transition
+- 💀 **Skeleton Loaders** — shown while products are fetching
+- 🔢 **Animated Stats Counter** — numbers count up on the homepage
+- 📜 **Scroll Reveal Animations** — sections animate in via IntersectionObserver
+- 📱 **Mobile Bottom Navigation Bar** — dedicated nav for small screens
+- 🔖 **Trust Badges Row** — scrollable with bidirectional swipe hints on mobile
+- ⬆️ **Auto Scroll-to-Top** — on every route change
+- 📲 **PWA Ready** — service worker registered for offline/installable support
 
-### 📄 Pages
+---
+
+## 🗺️ Pages
+
 | Route | Page | Description |
 |---|---|---|
-| `/` | Home | Hero, featured products, categories, stats, recently viewed |
-| `/products` | Product Listing | Full catalogue with sidebar filters and search |
-| `/cart` | Cart | Item management and order summary |
-| `/checkout` | Checkout | Delivery form, payment, promo codes, confirmation |
-| `/wishlist` | Wishlist | Saved products grid |
-| `/about` | About | Store info and founder profile |
-| `/contact` | Contact | Contact form and store details |
+| `/` | **Home** | Hero, featured products, stats, categories, recently viewed |
+| `/products` | **Products** | Full catalogue with sidebar filters + search |
+| `/cart` | **Cart** | Item list, quantity controls, order summary |
+| `/checkout` | **Checkout** | Delivery form, payment methods, promo codes, confirmation |
+| `/wishlist` | **Wishlist** | Saved products grid |
+| `/about` | **About** | Store story and founder profile |
+| `/contact` | **Contact** | Contact form and store info |
 
 ---
 
 ## 🧱 Tech Stack
 
-| Layer | Technology |
-|---|---|
-| **Framework** | React 18 (with Hooks) |
-| **Build Tool** | Vite |
-| **Routing** | React Router v6 |
-| **Styling** | Bootstrap 5 + Custom CSS (CSS Variables, animations) |
-| **Icons** | Bootstrap Icons + Font Awesome |
-| **Fonts** | Playfair Display, DM Sans (Google Fonts) |
-| **State Management** | React Context API (`CartContext`, `WishlistContext`) |
-| **Data Source** | [FakeStore API](https://fakestoreapi.com) |
-| **Persistence** | `localStorage` (dark mode, wishlist, recently viewed) |
-| **PWA** | Service Worker (`sw.js`) |
+| | Technology | Purpose |
+|---|---|---|
+| ⚛️ | **React 18** | UI framework with Hooks |
+| ⚡ | **Vite** | Build tool & dev server |
+| 🗺️ | **React Router v6** | Client-side routing |
+| 🎨 | **Bootstrap 5** | Responsive layout & components |
+| 🖌️ | **Custom CSS** | CSS variables, animations, dark mode |
+| 🔣 | **Bootstrap Icons + Font Awesome** | Icon libraries |
+| 🔤 | **Playfair Display, DM Sans** | Google Fonts |
+| 🧠 | **React Context API** | Global state (Cart, Wishlist) |
+| 🌐 | **FakeStore API** | Product data source |
+| 💾 | **localStorage** | Dark mode, wishlist, recently viewed |
+| 📲 | **Service Worker** | PWA / offline support |
 
 ---
 
 ## 🗂️ Project Structure
 
 ```
-bills-store/
+bills-ecommerce/
+│
 ├── public/
+│   ├── icon-192x192.png
 │   ├── icon-512x512.png
-│   ├── images/
-│   │   └── bill picture.png
-│   └── sw.js
+│   ├── manifest.json           # PWA manifest
+│   ├── sw.js                   # Service worker
+│   ├── screenshot-desktop.png
+│   ├── screenshot-mobile.png
+│   └── images/
+│       ├── bill picture.png
+│       ├── bill1.png
+│       ├── bill2.png
+│       ├── bill3.png
+│       ├── gcash.png
+│       └── maya.png
+│
 ├── src/
+│   ├── assets/
+│   │   └── images/             # Static asset images
+│   │
 │   ├── components/
-│   │   ├── Navbar.jsx        # Top nav + mobile bottom nav
-│   │   ├── Footer.jsx        # Footer with newsletter form
-│   │   ├── ProductCard.jsx   # Card + modal for products
-│   │   ├── Sidebar.jsx       # Category, sort, price filters
-│   │   └── ScrollToTop.jsx   # Auto-scroll on route change
+│   │   ├── Footer.jsx          # Footer with newsletter form
+│   │   ├── Header.jsx          # Simple page header
+│   │   ├── Navbar.jsx          # Top nav + mobile bottom nav
+│   │   ├── ProductCard.jsx     # Card + quick-view modal
+│   │   ├── ScrollToTop.jsx     # Auto-scroll on route change
+│   │   └── Sidebar.jsx         # Category / sort / price filters
+│   │
 │   ├── context/
-│   │   ├── CartContext.jsx   # Global cart state & actions
-│   │   └── WishlistContext.jsx
+│   │   ├── CartContext.jsx     # Global cart state & actions
+│   │   └── WishlistContext.jsx # Global wishlist state
+│   │
 │   ├── pages/
 │   │   ├── Home.jsx
 │   │   ├── ProductList.jsx
@@ -116,16 +137,17 @@ bills-store/
 │   │   ├── Wishlist.jsx
 │   │   ├── About.jsx
 │   │   └── Contact.jsx
-│   ├── App.jsx               # Routes + dark mode transition
-│   ├── main.jsx              # Entry point + providers
-│   └── index.css             # Global styles, CSS variables, animations
-├── .github/
-│   ├── screenshots/          # Preview images for README
-│   └── ISSUE_TEMPLATE/
-├── README.md
-├── CONTRIBUTING.md
+│   │
+│   ├── App.jsx                 # Routes + dark mode transition
+│   ├── main.jsx                # Entry point + context providers
+│   └── index.css               # Global styles, variables, animations
+│
+├── index.html
+├── vite.config.js
+├── eslint.config.js
+├── package.json
 ├── LICENSE
-└── package.json
+└── README.md
 ```
 
 ---
@@ -134,57 +156,44 @@ bills-store/
 
 ### Prerequisites
 - **Node.js** ≥ 18.x
-- **npm** or **yarn**
+- **npm** (comes with Node)
 
-### Installation
+### Run Locally
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/your-username/bills-store.git
-cd bills-store
+# 1. Clone the repo
+git clone https://github.com/billmamorno/bills-ecommerce.git
+cd bills-ecommerce
 
 # 2. Install dependencies
 npm install
 
-# 3. Start the development server
+# 3. Start dev server
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+Visit [http://localhost:5173](http://localhost:5173) 🎉
 
-### Build for Production
+### Scripts
 
-```bash
-npm run build
-npm run preview
-```
-
-### Available Scripts
-
-| Script | Description |
+| Command | Description |
 |---|---|
-| `npm run dev` | Start local dev server with HMR |
-| `npm run build` | Build optimized production bundle |
-| `npm run preview` | Preview production build locally |
+| `npm run dev` | Start local dev server with hot reload |
+| `npm run build` | Build optimized production bundle to `/dist` |
+| `npm run preview` | Preview the production build locally |
 
 ---
 
 ## 🎁 Promo Codes
 
-Test the checkout flow with these discount codes:
+Try these at checkout:
 
-| Code | Discount |
+| Code | Reward |
 |---|---|
 | `BILLS10` | 10% off subtotal |
-| `BILLS50` | ₱50 flat off |
-| `FEUTECH` | 15% off (FEU discount) |
+| `BILLS50` | ₱50 flat discount |
+| `FEUTECH` | 15% off (FEU exclusive) |
 | `FREESHIP` | ₱30 shipping bonus |
-
----
-
-## 🌙 Dark Mode
-
-Click the moon/sun icon in the navbar to toggle dark mode. A custom animated overlay plays during the transition featuring orbiting particles and a glowing center icon. Preference is saved to `localStorage`.
 
 ---
 
@@ -192,13 +201,16 @@ Click the moon/sun icon in the navbar to toggle dark mode. A custom animated ove
 
 <div align="center">
 
-**Bill C. Mamorno**
+<img src="public/images/bill picture.png" alt="Bill C. Mamorno" width="110" style="border-radius:50%;border:3px solid #800020;" />
+
+### Bill C. Mamorno
+
 *Sophomore Full Scholar · BS Information Technology – Business Analytics*
-*FEU Institute of Technology*
+**FEU Institute of Technology**
 
 [![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white)](https://www.facebook.com/mamornobillc/)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/b1llchavez)
-[![FEU Paraverse](https://img.shields.io/badge/FEU_Paraverse-800020?style=flat-square&logoColor=white)](https://paraverse.feutech.edu.ph/briefcase/profile/billcmamorno)
+[![FEU Paraverse](https://img.shields.io/badge/FEU%20Paraverse-800020?style=flat-square&logoColor=white)](https://paraverse.feutech.edu.ph/briefcase/profile/billcmamorno)
 
 </div>
 
@@ -206,18 +218,23 @@ Click the moon/sun icon in the navbar to toggle dark mode. A custom animated ove
 
 ## 📋 Academic Context
 
-> This project was developed as the **Final Project** for the course **Advanced Web Design** at **FEU Institute of Technology**, Academic Year 2025–2026, 2nd Term.
+> **Course:** Advanced Web Design
+> **School:** FEU Institute of Technology
+> **Academic Year:** 2025–2026, 2nd Term
+> **Project Type:** Final Project
 
-### Learning Objectives Demonstrated
+### Concepts Demonstrated
+
 - ✅ Component-based architecture with React
 - ✅ Client-side routing with React Router v6
 - ✅ Global state management via Context API
-- ✅ RESTful API consumption (FakeStore API)
-- ✅ Responsive design with Bootstrap 5 and custom CSS
-- ✅ CSS animations, transitions, and custom properties
-- ✅ Form validation and user feedback patterns
-- ✅ Progressive Web App (PWA) fundamentals
-- ✅ localStorage for client-side persistence
+- ✅ REST API consumption (FakeStore API)
+- ✅ Responsive & mobile-first design with Bootstrap 5
+- ✅ CSS custom properties, keyframe animations, transitions
+- ✅ Form validation and multi-step user flows
+- ✅ Progressive Web App (PWA) with service worker
+- ✅ `localStorage` for client-side data persistence
+- ✅ Dark mode with animated transitions
 
 ---
 
@@ -229,8 +246,8 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 <div align="center">
 
-Made with ❤️ by **Bill C. Mamorno** · FEU Institute of Technology
+*Made with ❤️ by* **Bill C. Mamorno** *· FEU Institute of Technology · 2026*
 
-*Bill got it all for you.*
+**Bill got it all for you.**
 
 </div>
